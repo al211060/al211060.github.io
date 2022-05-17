@@ -1,0 +1,23 @@
+img{
+    width: 75px;
+}
+
+@media (min-width: 768px) {
+    .nav-item>a{
+        text-align: center;
+        font-size: 25px;
+    }
+    .search{
+        width: 90%;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-item>a{
+        text-align: center;
+        font-size: 15px;
+    }
+    .search{
+        width: 65%;
+    }
+}

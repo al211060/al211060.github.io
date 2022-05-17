@@ -1,0 +1,39 @@
+<div class="users" *ngIf="usuarios != null else vacio">
+    <h1>Lista de Usuarios Registrados</h1>
+    <table>
+        <tr>
+            <th>Nombre(s)</th>
+            <th>Apellidos</th>
+            <th>Genero</th>
+            <th>Correo</th>
+            <th>Fecha de Nacimiento</th>
+        </tr>
+        <tr *ngFor = "let h of usuarios">
+            <td>{{h.nombre}}</td>
+            <td>{{h.apellido}}</td>
+            <td class="center">{{h.genero}}</td>
+            <td class="center">{{h.correo}}</td>
+            <td class="center">{{h.fnac}}</td>
+        </tr>
+    </table>
+</div>
+
+<ng-template #vacio>
+    <button hidden #omodal type="button" class="btn btn-primary" data-toggle="modal" data-target="#searchModal"></button>
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">Lista de usuarios vacia</h5>
+            </div>
+            <div class="modal-body">
+                <p>No hay usuarios registrados, dirijase a "Home" para registrarse</p>
+            </div>
+            <div class="modal-footer">
+                <button hidden #cmodal type="button" class="btn btn-secondary" data-dismiss="modal"></button>
+            </div>
+        </div>
+        </div>
+    </div>
+</ng-template>
+

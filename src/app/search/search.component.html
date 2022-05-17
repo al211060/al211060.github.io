@@ -1,0 +1,19 @@
+
+<button hidden #omodal type="button" class="btn btn-primary" data-toggle="modal" data-target="#searchModal"></button>
+<div  *ngIf="indice == -1" class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Heroe no encontrado</h5>
+        </div>
+        <div class="modal-body">
+          <p>No existen resultados de "{{nombreh}}", redireccionando a heroes disponibles</p>
+        </div>
+        <div class="modal-footer">
+            <button hidden #cmodal type="button" class="btn btn-secondary" data-dismiss="modal"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<app-unheroe *ngIf="indice != -1" [heroe] = 'miheroe'></app-unheroe>

@@ -1,0 +1,19 @@
+.carousel{
+    width: 75%;
+    margin: 25px auto;
+}
+.rdio{
+    display: flex;
+    align-items: flex-end;
+}
+.bdate{
+    display: flex;
+}
+
+.form-control{
+    margin-left: 15px;
+}
+
+.bdatei{
+    margin-top: 10px;
+}

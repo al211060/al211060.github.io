@@ -1,0 +1,17 @@
+.text{
+    background-color: #e9ecef;
+    padding: 25px;
+}
+p{
+    font-size: 20px;
+}
+.img{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+img{
+    width: 25%;
+    border: solid 3px black;
+    box-shadow: 10px 10px;
+}

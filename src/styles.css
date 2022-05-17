@@ -1,0 +1,4 @@
+@import './bootstrap-4.6.1-dist/css/bootstrap.min.css';
+body{
+    background-image: url("assets/img/bkgn.png");
+}
